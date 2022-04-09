@@ -9,11 +9,23 @@
       p {
         color: salmon;
       }
+      p::first-letter {
+        color: teal;
+      }
+      p::before {
+        content: "🎉";
+      }
+      p::after {
+        content: "🎉";
+      }
       p:hover {
         color: skyblue;
       }
-      div p:inth-child(2) {
+      div p:nth-child(2) {
         color: violet;
+      }
+      ::placeholder {
+        color: tomato;
       }
     </style>
   </head>
@@ -24,5 +36,6 @@
       <p>Master</p>
       <p>Lo mejor</p>
     </div>
+    <input type="text" placeholder="Name" />
   </body>
 </html>
